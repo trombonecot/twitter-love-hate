@@ -1,0 +1,24 @@
+{
+  "name": "twitter-love-hate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config prod.webpack.config.js -p",
+    "postbuild": "cp index.html ./dist/index.html",
+    "start": "webpack-dev-server",
+    "test": "webpack"
+  },
+  "author": "Eduard Cot Ros",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.10.0",
+    "eslint-loader": "^1.9.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  }
+}
